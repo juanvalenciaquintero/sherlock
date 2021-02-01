@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './paginas/home/home/home.component';
 
 import { HttpClientModule } from '@angular/common/http';
+import { MapaComponent } from './paginas/mapa/mapa.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    MapaComponent
   ],
   imports: [
     BrowserModule,
