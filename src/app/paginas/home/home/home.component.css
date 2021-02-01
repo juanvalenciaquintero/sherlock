@@ -1,0 +1,35 @@
+#titulos
+{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#titulos>div
+{
+  font-size:25px;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#casos
+{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: space-around;
+  flex-wrap: wrap;
+  width:100%;
+  margin:20px auto;
+}
+
+#casos>div
+{
+  margin-bottom:30px;
+}
+
+#casos img
+{
+  width: calc((100vw / 2) - 30px) !important;
+}
