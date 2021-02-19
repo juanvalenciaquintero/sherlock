@@ -1,0 +1,22 @@
+#contenedor
+{
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+align-items: center;
+}
+
+#contenedor>div
+{
+  width:40%;
+  border:1px solid;
+  padding:10px;
+}
+
+.title
+{
+font-weight: bold;
+font-size: 20px;
+margin-bottom: 10px;
+text-align: center;
+}

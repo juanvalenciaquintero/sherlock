@@ -7,12 +7,14 @@ import { HomeComponent } from './paginas/home/home/home.component';
 
 import { HttpClientModule } from '@angular/common/http';
 import { MapaComponent } from './paginas/mapa/mapa.component';
+import { CasoComponent } from './paginas/caso/caso.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    MapaComponent
+    MapaComponent,
+    CasoComponent
   ],
   imports: [
     BrowserModule,

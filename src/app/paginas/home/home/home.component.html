@@ -4,7 +4,7 @@
 </div>
 <div id="casos">
   <div *ngFor="let caso of casos">
-      <a href="/mapa">
+      <a routerLink="/caso/{{caso.id}}">
         <img src="/assets/caso{{caso.id}}.jpg" alt="caso {{caso.id}}">
       </a>
   </div>

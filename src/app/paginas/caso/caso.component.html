@@ -1,0 +1,14 @@
+<div id="contenedor">
+  <div>
+    <div class="title">Personajes del caso</div>
+    <div *ngFor="let personaje of caso.personajes">
+      <div>{{personaje.nombre}}</div>
+    </div>
+  </div>
+  <div>
+    <div class="title">Pistas del caso</div>
+    <div *ngFor="let pista of caso.pistas">
+      <div>{{pista.pista}}</div>
+    </div>
+  </div>
+</div>

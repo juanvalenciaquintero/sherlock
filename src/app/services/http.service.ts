@@ -1,4 +1,4 @@
-import { HttpClient, HttpParams, HttpHeaders } from '@angular/common/http';
+import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
 @Injectable({
@@ -20,7 +20,16 @@ export class HttpService
     const headers = new HttpHeaders()
       .set('Content-Type', 'application/x-www-form-urlencoded')
       .set("Access-Control-Allow-Origin", '*');
-    const params = new HttpParams().set('opcion','caso');
-    return this.http.get(this.url, {headers,params});
+    const params = new HttpParams().set('opcion', 'casos');
+    return this.http.get(this.url, { headers, params });
+  }
+
+  getCaso(id: any)
+  {
+    const headers = new HttpHeaders()
+      .set('Content-Type', 'application/x-www-form-urlencoded')
+      .set("Access-Control-Allow-Origin", '*');
+    const params = new HttpParams().set('opcion', 'caso').set('id', id);
+    return this.http.get(this.url, { headers, params });
   }
 }
