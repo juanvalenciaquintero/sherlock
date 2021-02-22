@@ -12,27 +12,41 @@ export class CasoComponent implements OnInit
 
   id: any;
   caso: any = [];
+  titulo:any = [];
 
   constructor(public http: HttpService, private rutaActiva: ActivatedRoute, private router: Router)
   {
     this.caso['personajes']='';
     this.caso['pistas'] = '';
+    this.titulo['caso'] = '';
+    this
 
   }
 
   ngOnInit(): void
   {
-    this.getCaso();
+    this.id = this.rutaActiva.snapshot.params.id;
+    this.getCaso(this.id);
+    this.getTitulo(this.id);
   }
 
-  getCaso()
+  getCaso(id:any)
   {
-    this.id = this.rutaActiva.snapshot.params.id;
-    this.http.getCaso(this.id)
+    this.http.getCaso(id)
       .subscribe(data =>
       {
         this.caso = data;
         console.log('datos: ' + JSON.stringify(this.caso));
+      });
+  }
+
+  getTitulo(id:any)
+  {
+    this.http.getTitulo(id)
+      .subscribe(data =>
+      {
+        this.titulo = data;
+        console.log('datos: ' + JSON.stringify(this.titulo));
       });
   }
 

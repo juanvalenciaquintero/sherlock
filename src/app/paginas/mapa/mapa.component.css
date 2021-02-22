@@ -1,0 +1,39 @@
+#cabecera
+{
+  height:50px;
+}
+
+#mapa
+{
+  position:absolute;
+  top:0;
+  left:0;
+  width:1000px;
+  height:700px;
+}
+
+#mapaImg
+{
+  position:absolute;
+
+  width:1000px;
+  height:700px;
+}
+
+.normal
+{
+  top:0;
+  left:0;
+}
+
+.zoom
+{
+  transform: scale(1.5);
+}
+
+.izquierda
+{
+
+  top:-200px;
+  left:-300px;
+}
