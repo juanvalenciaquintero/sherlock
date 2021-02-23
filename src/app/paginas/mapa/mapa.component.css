@@ -1,23 +1,25 @@
 #cabecera
 {
   height:50px;
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:1000;
 }
 
 #mapa
 {
   position:absolute;
-  top:0;
+  top:50px;
   left:0;
-  width:1000px;
-  height:700px;
+
 }
 
 #mapaImg
 {
   position:absolute;
 
-  width:1000px;
-  height:700px;
+
 }
 
 .normal
