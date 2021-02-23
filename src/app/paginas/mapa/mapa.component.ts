@@ -33,6 +33,11 @@ export class MapaComponent implements OnInit
       elemento.style.top = coordX + "px";
       elemento.style.left = coordY + "px";
     }
+        var elemento = document.getElementById('mapaImg');
+    if (elemento != null)
+    {
+      elemento.classList.add('zoom');
+    }
 
   }
 }
